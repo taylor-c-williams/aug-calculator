@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+*:focus{
+    outline:none;
+}
+
 body,
 html {
     height: 100%;
@@ -13,26 +17,47 @@ html {
 
 main {
     display:grid;
-    grid-template-columns: 200px 200px 200px 200px 200px 00px;
+    grid-template-columns: 85px 50px;
     justify-content: center;
     align-items: center;
     margin:10px;
     font-family: 'Yomogi', cursive;
+    font-size:4rem;
 }
 
-.input {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin:10px;  
+.input-container{
+    display:grid;
+    grid-template-rows:  50px 50px;
+    justify-content:right;
+    align-items:initial;
+    grid-gap:10px;
+    
 }
 
-.buttons {
-    display: flex;
+input{
+   border:1px dashed;
+   font-family: 'Yomogi', cursive;
+   height:50px;
+   margin-right:10px;
+   font-size:2rem;
+}
+
+.button-container{
+    display:grid;
+    grid-template-rows:  50px 50px 50px 50px;
     justify-content: center;
-    align-items: center;
+}
+
+.buttons{
+    height:40px;
+    width:40px;
+    background-color: white;
+    font-family: 'Yomogi', cursive;
+    border:1px dashed;
+    margin:5px;
 }
 
 .solution {
+    font-size:2rem;
 }
 

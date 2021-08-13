@@ -20,16 +20,19 @@
 
 	<body>
 		<main>
-			<div class="input"><input id="input1" /></div>
-			<div class="input"><input id="input2" /></div>
-
-				<button id="add">+</button>
-				<button id="subtract">-</button>
-				<button id="multiply">*</button>
-				<button id="divide">/</button>
+			<div class="input-container">
+				<div class="input"><input id="input1" type="number" /></div>
+				<div class="input"><input id="input2" type="number"/></div>
+			</div>
+			<div class="button-container">
+				<button id="add" class="buttons">+</button>
+				<button id="subtract" class="buttons">-</button>
+				<button id="multiply" class="buttons">*</button>
+				<button id="divide" class="buttons">/</button>
+			</div>
 			</div>
 
-			<div class="solution" id="solution"></div>
+			= <div class="solution" id="solution"></div>
 		</main>
 		<script type="module" src="./app.js"></script>
 	</body>
